@@ -1,4 +1,4 @@
-/*import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
@@ -115,6 +115,7 @@ function CommunitySelection({ onNext }: { onNext: (selectedCommunities: string[]
             key={community}
             onClick={() => toggleCommunity(community)}
             className={`aspect-square ${
+              
               selectedCommunities.includes(community) 
                 ? 'bg-blue-600 text-white' 
                 : 'bg-white text-blue-600 border border-blue-600'
@@ -138,7 +139,7 @@ function CommunitySelection({ onNext }: { onNext: (selectedCommunities: string[]
   )
 }
 
-// Updated Creator Selection Component
+// Creator Selection Component
 const creators = [
   { name: 'Creator 1', image: 'https://v0.dev/public.blob.vercel-storage.com/creator1-Hy1Hy1-1686924433.jpg' },
   { name: 'Creator 2', image: 'https://v0.dev/public.blob.vercel-storage.com/creator2-Hy1Hy1-1686924433.jpg' },
@@ -314,6 +315,4 @@ export default function OnboardingFlow() {
       {step === 4 && <MainPage />}
     </div>
   )
-}*/
-
-
+}
